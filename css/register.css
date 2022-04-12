@@ -1,0 +1,108 @@
+.register-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .form-wrapper {
+  color: #fff;
+  width: 550px;
+  height: 250px;
+  text-align: center;
+  text-transform: uppercase;
+  background: #333;
+  border-radius: 20px;
+  padding: 10px;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#register-form {
+  padding: 5px 30px;
+}
+.form-wrapper h1 {
+  text-align: center;
+  padding: 20px;
+}
+.register-form-action {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.input-wrapper input {
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  background: #f1f1f1;
+}
+.register-form-action button {
+  /* padding: 15px;
+  width: 100%;
+  border: none;
+  background: #31b9e4;
+  border-radius: 4px;
+  font-size: 20px; */
+
+  width: 150px;
+  line-height: 50px;
+  font-size: 16px;
+  border: 2px solid  #2ecc71;
+  background: none;
+  border-radius: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: #ccc;
+  outline: none;
+  transition: 0.3s all;
+}
+#register-form .textregister {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 30px;
+  
+}
+#register-form .input-wrapper .err {
+  padding-top: 5px;
+  height: 30px;
+  padding-left: 20px;
+}
+
+
+.login-container h1 {
+  letter-spacing: 2px;
+ 
+ 
+}
+::placeholder {
+  color: #ccc;
+}
+#register-form .input-wrapper input {
+  width: 230px;
+  padding: 20px;
+  border-radius: 30px;
+  border: 2px solid #3498db;
+  background: none;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  color: #ccc;
+  transition: 0.25s;
+  
+}
+#register-form .input-wrapper input:focus {
+  width: 290px;
+  border: 2px solid #2ecc71;
+}
+
+#redirect-login {
+  color: #2ecc71;
+  cursor: pointer;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #333333 inset;
+  -webkit-text-fill-color:  #ccc !important;
+}

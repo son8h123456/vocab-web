@@ -1,0 +1,207 @@
+body {
+    box-sizing: border-box;
+}
+.learn-container {
+    height: 100vh;
+    /* width: 100vw; */
+    background: #fff;
+}
+.learn-navbar {
+    height: 60px;
+    width: 100%;
+    background: black;
+    color: #fff;
+    position: fixed;
+    z-index: 1;
+   
+}
+.learn-navbar ul {
+    /* width: 100%; */
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.learn-navbar ul li {
+    list-style-type: none;
+    margin-right: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.learn-navbar ul li:hover {
+    color: green;
+}
+.open {
+    color: green;
+}
+.learn-navbar ul li::after {
+    content: "";
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.learn-navbar ul li:nth-child(1)::after, .learn-navbar ul li:nth-child(3)::after, .learn-navbar ul li:nth-child(4)::after {
+    display: none;
+}
+/* .learn-navbar ul li:nth-child(4)::after, .learn-navbar ul li:nth-child(5)::after */
+.learn-navbar ul li:nth-child(1) {
+    position: absolute;
+    font-size: 30px;
+    left: 20px;
+    text-transform: uppercase;
+}
+.learn-navbar ul li:nth-child(4){
+    position: absolute;
+    font-size: 13px;
+    right: 0;
+}
+/* .learn-navbar ul li:nth-child(5) {
+    position: absolute;
+    font-size: 13px;
+    right: 0;
+} */
+.learn-container .learn-content {
+    width: 100%;
+    display: flex;
+}
+.learn-container .left-column {
+    width: 18%;
+    height: 100vh;
+    background-color: #212121;
+    color: #fff;
+}
+
+.right-column .categoryTitle {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 25px;
+}
+.learn-container .right-column {
+    width: 82%;
+    height: 100vh;
+    overflow: scroll;
+    
+}
+.learn-container .right-column .libvocabb  {
+    width: 100%;
+ 
+   
+    /* background-color: turquoise; */
+    /* display: flex;
+    justify-content: space-around; */
+   display: grid;
+   grid-template-columns: repeat(3, auto);
+   /* grid-template-rows: 240px; */
+   grid-auto-rows: 300px;
+   
+  
+    
+}
+
+.left-column ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-column ul li {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #fff;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 12px 30px 12px 30px;
+    padding-left: 10px;
+    text-align: center;
+}
+.left-column ul li:hover  {
+    border-color: green;
+    box-shadow: 0 0 10px green;
+}
+.activeCat {
+  
+    border-color: green !important;
+    box-shadow: 0 0 20px green;
+}
+li {
+    list-style-type: none;
+}
+
+.right-column .scene {
+    
+    width: 340px;
+    margin-top: 50px;
+    height: 280px;
+    perspective: 1000px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 35px;
+  }
+ 
+.right-column  .card {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+  }
+  
+  .card:hover {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  .right-column  .img {
+      display: flex;
+      position: relative;
+      width: 100%;
+      justify-content: center;
+  }
+  .note {
+      position: absolute;
+      height: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      color: #fff;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+  .card__face--back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    background-image: linear-gradient(to right,#15849f,#f2c40f);
+    background-size: cover;
+    box-shadow: 10px 10px 5px 5px #888888;
+  }
+  .audio {
+    margin: 20px 0;
+    color: #ffffff;
+  }
+  .title {
+    margin: 20px 0;
+    color: #fff;
+  }
+  .right-column  ul li {
+    margin-left: 25px;
+    color: #fff;
+  }
+  

@@ -1,0 +1,131 @@
+/* .practice body {
+  
+    background-color:#3399ff ;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+} */
+
+.practice {
+    height: 100vh;
+    width: 100vw;
+    background-color:#3399ff;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    height: 100vh;
+    text-align: center;
+}
+
+.practice .wrapper {
+    width: 100%;
+    margin:  0 auto;
+   padding-top: 80px;
+}
+
+
+.practice h1 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin: 5px 0;
+    letter-spacing: 2px;
+    font-size: 2.6em;
+}
+.practice p {
+    font-size: 1.6em;
+    margin-bottom: 30px;
+}
+
+
+.practice #alphabet {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 900px;
+  
+}
+.practice #alphabet::after {
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+.practice #alphabet li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+    width: 50px;
+    height: 30px;
+    padding-top: 4px;
+    background: #fff;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    transition: all 0.3s ease-in-out;
+}
+.practice #alphabet li:hover {
+    background:  #99ff99;
+    border: 1px soid black;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.practice #my-word {
+    margin: 0;
+    display: block;
+    padding: 0;
+
+}
+.practice #my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 1.6em;
+}
+
+.practice .active {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    transition: all 0.3s ease-in-out;
+}
+.practice .active:hover {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    transition: all 0.3s ease-in-out;
+
+}
+.practice #mylives {
+    font-size: 1.6em;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.practice button {
+    border-radius: 30px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+   
+}
+.practice button:hover {
+  
+    transition: all 0.3s ease-in-out;
+    background:  #99ff99;
+    border: 1px solid #fff;
+    color:  #fff;
+}
+
+
